@@ -9,6 +9,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+  <!-- ✦ Inline tweaks specific to this page ✦ -->
+  <style>
+    /* ——— Experience section ——— */
+    .experience-list  { display:flex; flex-direction:column; gap:0.8rem; }
+    .experience-item  { display:flex; align-items:center; gap:0.8rem; }
+    .experience-item img        { width:56px; height:56px; object-fit:contain; }
+    .experience-item .meta      { font:600 0.95rem/1.25 "Inter", sans-serif; }
+    .experience-item .meta .date{ font-weight:400; color:#666; margin-left:0.35rem; }
+    .experience-item .subrole{ font-weight:400; color:#444; }
+  </style>
 </head>
 
 <body>
@@ -61,6 +72,7 @@
 
       <p style="padding-left:10px;padding-right:20px"> 
         <ul>
+          <li><span style ="color:#1772d0">[Oct 2025]</span>&nbsp;&nbsp;Upcoming workshop on Artificial Social Intelligence accepted at ICCV 2025. Join us in Honolulu this October!</li>
           <li><span style ="color:#1772d0">[May 2025]</span>&nbsp;&nbsp; Joined <a href="https://deepmind.google">Google DeepMind</a> as a student researcher this summer in Mountain View!</li>
           <li><span style ="color:#1772d0">[Apr 2025]</span>&nbsp;&nbsp;Invited talk at University of Pennsylvania (Penn NLP), <i>"Towards Artificial Social Intelligence: Grounded Social Reasoning in Multimodal Models"</i></li>
           <li><span style ="color:#1772d0">[Feb 2025]</span>&nbsp;&nbsp;&#128221; <a href="https://arxiv.org/abs/2502.15109">New paper</a> introducing <i>Social Genome</i> to study grounded social reasoning abilities of multimodal models.</li>
@@ -336,6 +348,52 @@
             </ul>
         </p>
 
+        <!-- ——— Experience Section ——— -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px 0px 0px 10px;width:100%;vertical-align:middle">
+              <heading><h4 id="experience"></h4><b>Work Experience</b></heading>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <!-- Clean flex-layout list of roles -->
+        <div class="experience-list" style="padding:10px 20px;">
+          <!-- Google DeepMind -->
+          <div class="experience-item">
+            <img src="data/files/gdm.png" alt="Google DeepMind logo">
+            <p class="meta">
+              Google DeepMind, Student Researcher<span class="date"> · May 2025 - present</span><br><span class="subrole">Multimodal AI, Foundational Research</span>
+            </p>
+          </div>
+
+          <!-- Robust.AI -->
+          <div class="experience-item">
+            <img src="data/files/robust_ai.jpeg" alt="Robust.AI logo">
+            <p class = "meta">
+            Robust.AI, Research Intern<span class="date"> · May-August 2024</span><br><span class="subrole">Perception, Human-Robot Interaction, Collaborative Mobile Robots</span>
+          </p>
+        </div>
+
+           <!-- Caltech -->
+           <div class="experience-item">
+            <img src="data/files/caltech.png" alt="Caltech logo">
+            <p class = "meta">
+            Caltech, Research Fellow<span class="date"> · June-August 2021</span><br><span class="subrole">Multimodal Machine Learning, Emotion Perception</span>
+          </p>
+        </div>
+
+           <!-- EPFL -->
+           <div class="experience-item">
+            <img src="data/files/epfl.png" alt="EPFL Logo">
+            <p class = "meta">
+            EPFL, Research Fellow<span class="date"> · May-August 2019</span><br><span class="subrole">Computer Vision, Detection and Tracking Algorithms</span>
+          </p>
+        </div>
+
+          <!-- Add additional experiences below using the same structure -->
+        </div>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px 0px 0px 10px;width:100%;vertical-align:middle">
@@ -350,7 +408,7 @@
           <ul>
             <li><b>NLP/ML: </b>ARR 2025, COLM 2024, COLM 2025, NeurIPS 2025</li>
             <li><b>Robotics:</b> RSS 2025, ICRA 2025, IROS 2024, International Journal of Social Robotics 2023</li>
-            <li><b>Multimodal Interaction: </b>ACM ICMI 2024, ICMI 2023</li>
+            <li><b>Multimodal Interaction: </b>IVA 2025, ACM ICMI 2024, ICMI 2023</li>
             <li><b>Affective Computing: </b>ACII 2024, ACII 2023 (workshop track)</li>
           </ul>
         </p>
@@ -498,7 +556,7 @@
             <td style="padding-right:30px">
               <br>
               <p style="text-align:right;font-size:x-small;">
-               <b>last updated on May 12, 2025</b><br>
+               <b>last updated on May 18, 2025</b><br>
                created by modifying this wonderful <a style="font-size:x-small;" href="https://github.com/jonbarron/website"> template</a> from <a style="font-size:x-small;" href="https://jonbarron.info"> Jon Barron</a>.
               </p>
             </td>
