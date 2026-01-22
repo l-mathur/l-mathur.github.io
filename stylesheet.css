@@ -134,3 +134,58 @@ span.highlight {
 li {
     margin-bottom: 5px;
 }
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  * {
+    box-sizing: border-box;
+    max-width: 100vw;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  table {
+    table-layout: fixed !important;
+  }
+  p, ul, div, td {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  div[style*="margin-left:5%"] {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  table, tbody, tr, td {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  td[style*="padding-left:3%"] {
+    text-align: center;
+    padding: 20px 10px !important;
+  }
+  td[style*="padding-left:3%"] img {
+    width: 50% !important;
+    max-width: 200px !important;
+  }
+  name {
+    font-size: 28px;
+  }
+  body, td, th, tr, p, a {
+    font-size: 15px;
+  }
+  .experience-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  div[style*="margin-top:-2.55%"] {
+    margin-top: 0 !important;
+  }
+}
